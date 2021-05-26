@@ -1,11 +1,11 @@
-const passwordForEntry = 'bluegate1999'
+const primaryPassword = 'bluegate1999'
+const secondaryPassword = 'jameskmellors'
 
 let passwordGiven
 
 const passwordProtectOnPage = () => {
     passwordGiven = prompt('Please enter the password *case sensitive*')
-    if (passwordGiven != null && passwordGiven == passwordForEntry) {
-        alert('ACCESS GRANTED')
+    if (passwordGiven != null && passwordGiven == primaryPassword) {
     } else {
         alert("ACCESS DENIED")
         window.location.replace('../index.html')
@@ -15,8 +15,7 @@ const passwordProtectOnPage = () => {
 
 const passwordFunction = () => {
     passwordGiven = prompt('Please enter the password *case sensitive*')
-    if (passwordGiven != null && passwordGiven == passwordForEntry) {
-        alert('ACCESS GRANTED')
+    if (passwordGiven != null && passwordGiven == secondaryPassword) {
         window.location.replace('password protection/select-your-website.html')
     } else {
         alert("ACCESS DENIED")
