@@ -4,11 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔐 jameskmellors github 🔐</title>
-    <script src="script.js" defer ></script>
-    <link rel="stylesheet" href="style.css">
+    <title>James | Home</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.png"/>
 </head>
 <body>
-    <button class='enter-password' onclick="passwordFunction()">ENTER PASSWORD</button>
+    <header>
+        <a class="logo" href="/"><img src="images/logo.png" alt="logo" height='50'></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="navbar-pages/projects.html">Projects</a></li>
+                <li><a href="navbar-pages/about.html">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="navbar-pages/contact.html">Contact</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#">Home</a>
+            <a href="navbar-pages/projects.html">Projects</a>
+            <a href="navbar-pages/about.html">About</a>
+            <a href="navbar-pages/contact.html">Contact</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="mobile.js"></script>
+
+    <div class="information-square">
+        <p class="information-p">
+            This web-page is dedicated to the development of <strong>James K Mellors</strong>.
+        </p>
+    </div>
+
+    <a href="navbar-pages/projects.html" class="center">Projects</a>
 </body>
 </html>
