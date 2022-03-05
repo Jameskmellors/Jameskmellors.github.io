@@ -62,8 +62,11 @@ header {
   color: red;
 }
 
-.project-links li a{
-  background-color: red;
+.project-links a {
+  text-decoration: none; 
+  color: black;
+  padding: 0.5rem;
+  border: 3px solid black;
 }
 
 .information-square {
